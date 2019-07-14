@@ -1,0 +1,112 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+
+        <link rel="stylesheet" href="CSS/IniciarSesionCSS.css">
+        <link rel="stylesheet" type="text/css" href="CSS/estilo.css"/>
+        <link rel="stylesheet" type="text/css" href="CSS/estiloNav.css"/>
+        <link rel="stylesheet" type="text/css" href="CSS/estiloCont.css"/>
+        <link rel="stylesheet" type="text/css" href="CSS/estiloFooter.css"/>
+        <link rel="stylesheet" type="text/css" href="CSS/estiloAlerts.css">
+        <script src="https://kit.fontawesome.com/4f1a4c5e1e.js"></script>
+        <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+   
+    </head>
+
+    <body class= "font">
+                <nav>
+                        <div class="wrapper-nav1">
+                            <div class="logo-nav"><img src="Imagenes/logo.png" class="logo-nav-img"/></div>
+                                <div class="usuario-nav">
+                                <div class="cerrar-sesion"><a href="#" id="Reg">Registrarse</a></div>
+                                <div class="usr-name-cont">
+                                <div class="usr-name"><a href="#" id="IniSe">Iniciar Sesión</a></div>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="wrapper-nav2">
+                            <div><a href="#">Libros</a></div>
+                            <div><a href="#">Autores</a></div>
+                            <div><a href="#">Librerías</a></div>
+                            <div><a href="#">Clubes de Lectura</a></div>
+                            <div><a href="#">Promociones</a></div>
+                        </div>
+            
+                        <div class="select-nav">
+                            <select>
+                                <option value="1">Libros</option>
+                                <option value="2">Autores</option>
+                                <option value="3">Librerías</option>
+                                <option value="4">Registrar Libro</option>
+                                <option value="5">Clubes de Lectura</option>
+                                <option value="6">Promociones</option>
+                            </select>
+                        </div>
+                    </nav>
+            <div class="cont-login">
+                <div id="Caja">
+                    <form>
+                        <div id="Contenedor1">
+                            <label class="label_1 acomodar" for="correo">Nombre usuario</label>
+                            <input id="correo"  type="email" name="correo">
+                            <label class="label_2 acomodar" for="contraseNa">Contraseña</label>
+                            <input id="contraseNa" type="password" name="contraseNa">
+                            <a id="olv" class="acomodar a_Olv">¿Olvidó su Contraseña?</a>
+                        </div>
+    
+                        <div id="Contenedor2">
+                            <input class="button" id="Boton_Ingresar" type="submit" onclick="obtenerDatos()" value="Ingresar" name="Boton_Ingresar">
+                        </div>
+                    </form>
+                </div>
+
+                <div id="alert" class="alert oculto">
+                    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                    <label id="msg"></label>
+                </div>
+            </div>
+            
+            <footer>
+                <div class="footer-cont"><a href="#"><img src="Imagenes/logo.png" class="logo"/></a></div>
+                <div class="footer-cont">
+                    <h4></h4>
+                    <a href="https://www.barnesandnoble.com/" target="_blank"><img src="Imagenes/Barnes_&_Noble_logo.png" class="logo"/></a><br>
+                    <a href="https://www.booksforkids.org/" target="_blank"><img src="Imagenes/bfk-logo-clear.png" class="logo"/></a><br>
+                </div>
+                <div class="footer-cont">
+                    <h4>Compañia</h4>
+                    <a href="#"><i class="fas fa-paper-plane"></i>Contacto</a><br>
+                    <a href="#"><i class="fas fa-file-invoice"></i>Términos de uso</a><br>
+                    <i class="fab fa-instagram fa-lg"></i>
+                    <i class="fab fa-facebook-square fa-lg"></i>
+                    <i class="fab fa-twitter-square fa-lg"></i>
+                </div>
+    
+                <div class="footer-cont">
+                    <h4>Soporte</h4>
+                    <a href="#"><i class="fas fa-headset"></i>Ayuda</a><br>
+                    <a href="#"><i class="fas fa-question-circle"></i>Preguntas frecuentes</a><br>
+                </div>
+    
+                <div class="footer-cont">
+                    
+                </div>
+                
+            </footer>
+        
+            <script src="js/usuarios/usuario-servicio.js"></script>
+            <script src="js/usuarios/controlador-iniciar-session.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    </body>
+</html>
