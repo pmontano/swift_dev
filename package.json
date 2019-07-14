@@ -14,5 +14,13 @@
     "nodemon": "^1.19.1"
   },
   "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pmontano/swift_dev.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pmontano/swift_dev/issues"
+  },
+  "homepage": "https://github.com/pmontano/swift_dev#readme",
   "description": ""
 }
