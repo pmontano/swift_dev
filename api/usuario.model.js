@@ -7,6 +7,7 @@ let userSchema = new mongoose.Schema({
     contrasena: { type: String, required: true },
     nombre: { type: String, required: true },
     direccion : {type: String, required: true}
+    segundo_apellido: { type: String, required: true }
 });
 
 module.exports = mongoose.model('Usuario', userSchema, "usuarios");
